@@ -1,7 +1,11 @@
 # group_data/all.py
 
-# Keep this file outside of source control? 
-
 # This applies to all groups/hosts
-# modify to suit your config!
-ssh_config_file = "/Users/espenbr/.ssh/oci_bastion_config"
+
+## import os 
+##
+## my_dir = os.getcwd()
+## print(f"Current dir is {my_dir}")
+
+# Working dir shoud lbe top level 
+ssh_config_file = "./config/use_this_config"

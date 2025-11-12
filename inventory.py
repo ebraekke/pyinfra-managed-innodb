@@ -1,2 +1,3 @@
 # inventory.py
-hosts = ["db-node-10"]
+
+hosts = ["db01"]
