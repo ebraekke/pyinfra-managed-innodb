@@ -1,3 +1,11 @@
 # inventory.py
 
-hosts = ["db01"]
+hosts = [
+    "db1", 
+    "db2", 
+    "db3",
+]
+
+groups = {
+    "db_nodes": hosts,
+}

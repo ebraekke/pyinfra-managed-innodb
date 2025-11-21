@@ -2,13 +2,54 @@
 Manage InnoDB Cluster configurations using PyInfra
 
 
+
 ```
-pyinfra --debug @all inventory.py exec -- "hostname"
+pyinfra  inventory.py deploy.py    
 ```
 
-Regenerate this before run
 ```
-Host db-node-10
+pyinfra  inventory.py exec -- "hostname"  
+>>
+--> Loading config...
+--> Loading inventory...
+--> Connecting to hosts...
+    No host key for 10.0.1.202 found in known_hosts, accepting & adding to host keys file
+    Added host key for 10.0.1.202 to known_hosts
+    No host key for 10.0.1.123 found in known_hosts, accepting & adding to host keys file
+    Added host key for 10.0.1.123 to known_hosts
+    No host key for 10.0.1.238 found in known_hosts, accepting & adding to host keys file
+    Added host key for 10.0.1.238 to known_hosts
+    [db1] Connected
+    [db3] Connected
+    [db2] Connected
+
+--> Preparing exec operation...
+    [db1] Ready: shell
+    [db3] Ready: shell
+    [db2] Ready: shell
+
+--> Beginning operation run...
+--> Starting operation: server.shell (hostname)
+[db1] db1
+    [db1] Success
+[db3] db3
+    [db3] Success
+[db2] db2
+    [db2] Success
+
+--> Results:
+    Operation                 Hosts   Success   Error   No Change   
+    server.shell (hostname)   3       3         -       -           
+    Grand total               3       3         -       -           
+
+--> Disconnecting from hosts...
+```
+
+TODO: Reference to `oci-posh-utils` 
+
+Regenerate this before run 
+```
+Host db1
   HostName 10.0.1.54
   User opc
   IdentityFile /tmp/db-10610
