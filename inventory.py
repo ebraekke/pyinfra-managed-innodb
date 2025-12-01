@@ -1,9 +1,9 @@
 # inventory.py
 
 hosts = [
-    "db1", 
-    "db2", 
-    "db3",
+    "db-az1-1", 
+    "db-az1-2", 
+    "db-az1-3",
 ]
 
 groups = {
