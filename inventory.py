@@ -1,10 +1,7 @@
 # inventory.py
 
 hosts = [
-    "db-az1-1", 
-    "db-az1-2", 
-    "db-az1-3",
-]
+    "10.0.1.62",]
 
 groups = {
     "db_nodes": hosts,

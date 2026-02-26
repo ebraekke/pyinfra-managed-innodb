@@ -12,7 +12,7 @@ import os
 # Working dir shoud be top level 
 # ssh_config_file = "./config/use_this_config"
 
-ssh_config_file = os.environ.get("SSH_CONFIG_FILE")
+# ssh_config_file = os.environ.get("SSH_CONFIG_FILE")
 
 # Common MySQL version and passwords — overrideable per group/host
 mysql_version = "8.4"

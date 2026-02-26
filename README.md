@@ -1,7 +1,16 @@
 # pyinfra-managed-innodb
 Create (and manage) InnoDB Cluster configurations using PyInfra
 
+No SSH config
+```powershell
+pyinfra --data ssh_key=.config/db.key --data ssh_config_file=.config/ssh_config 10.0.1.62 deploy.py
+```
 
+```powershell
+$env:SSH_CONFIG_FILE="./.config/ssh_config"
+
+pyinfra --data ssh_key=.config/db.key 10.0.1.62 exec -- hostname
+```
 
 ```
 pyinfra  inventory.py deploy.py    

@@ -11,7 +11,7 @@ MYSQL_VERSION = host.data.mysql_version
 from pyinfra.operations import server
 
 """
-One liner, not back-quote around el8, cannot cut and paste into terminal and run.
+One liner, note back-quote around el8, cannot cut and paste into terminal and run.
 """
 server.shell(
     name="Disable mysql dnf module on el8",
