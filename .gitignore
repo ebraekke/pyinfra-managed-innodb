@@ -1,5 +1,6 @@
 # ebraekke 
 config/ 
+.config/ 
 
 
 # Byte-compiled / optimized / DLL files
